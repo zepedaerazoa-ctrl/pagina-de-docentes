@@ -7,6 +7,12 @@
   --teal: #0f766e;
   --nav-pastel: #f8e7a8;
   --nav-strong: #8a6515;
+  --nav-red: #a94442;
+  --ochre-soft: #e6c879;
+  --ochre-dark: #604714;
+  --beige-page: #ead9b8;
+  --project-blue: #4f83a8;
+  --project-blue-dark: #173b59;
 }
 
 * {
@@ -19,44 +25,58 @@ html {
 
 body {
   font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  background-color: var(--light);
+  background-color: var(--beige-page);
   color: #212529;
 }
 
 .site-header {
-  background-color: var(--nav-pastel);
+  background-color: var(--nav-red);
+}
+
+.institution-strip {
+  padding: 0.5rem 1rem;
+  background-color: #873536;
+  color: #fff8e6;
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .navbar {
   background-color: transparent;
+  min-height: 76px;
 }
 
 .logo-placeholder {
   display: inline-grid;
-  width: 48px;
-  height: 48px;
+  width: 68px;
+  height: 68px;
   place-items: center;
   border: 2px dashed var(--nav-strong);
   border-radius: 50%;
-  color: var(--nav-strong);
-  font-size: 0.6rem;
+  color: #fff8e6;
+  font-size: 0.68rem;
+  font-weight: 800;
   letter-spacing: 0.06em;
 }
 
 .nav-link {
-  color: #212529 !important;
+  color: #fff8e6 !important;
+  font-weight: 700;
   transition: color 0.25s ease, transform 0.25s ease;
 }
 
 .nav-link:hover,
 .nav-link.active {
-  color: var(--nav-strong) !important;
+  color: #f8e7a8 !important;
   transform: translateY(-1px);
 }
 
 .specialty-bar {
-  border-top: 1px solid rgba(138, 101, 21, 0.18);
-  background-color: rgba(255, 248, 220, 0.78);
+  border-top: 1px solid rgba(255, 248, 230, 0.22);
+  background-color: #c36d5e;
 }
 
 .specialty-links {
@@ -71,10 +91,10 @@ body {
 .specialty-links a {
   flex: 0 0 auto;
   padding: 0.48rem 0.8rem;
-  border: 1px solid rgba(138, 101, 21, 0.25);
+  border: 1px solid rgba(96, 71, 20, 0.28);
   border-radius: 999px;
   background-color: #fff9df;
-  color: #5f4817;
+  color: var(--ochre-dark);
   font-size: 0.78rem;
   font-weight: 700;
   text-decoration: none;
@@ -82,7 +102,7 @@ body {
 }
 
 .specialty-links a:hover {
-  background-color: #f3d978;
+  background-color: var(--ochre-soft);
   transform: translateY(-2px);
 }
 
@@ -177,7 +197,7 @@ body {
 }
 
 .specialties-section {
-  background-color: #fffaf0;
+  background-color: #f3e6ca;
 }
 
 .specialty-card {
@@ -188,6 +208,23 @@ body {
   color: #40351e;
   box-shadow: 0 0.75rem 1.5rem rgba(138, 101, 21, 0.08);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.workshop-button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.55rem 0.85rem;
+  border-radius: 0.35rem;
+  background-color: var(--ochre-dark);
+  color: #fff9e7;
+  font-size: 0.82rem;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.workshop-button:hover {
+  background-color: #3f2f0d;
+  color: #ffffff;
 }
 
 .specialty-card:hover {
@@ -222,12 +259,12 @@ body {
 .subsection-title {
   font-size: 1.5rem;
   font-weight: 600;
-  color: #0d6efd;
+  color: var(--ochre-dark);
   margin-bottom: 1rem;
 }
 
 .info-box {
-  background-color: #ffffff;
+  background-color: #f4e6c8;
 }
 
 .card-hover {
@@ -278,6 +315,32 @@ body {
 .teacher-card:hover {
   transform: translateY(-6px);
   box-shadow: 0 1rem 2rem rgba(23, 32, 51, 0.14) !important;
+}
+
+#docentes .container > .mb-4 .card {
+  background-color: var(--ochre-soft);
+  border: 0;
+}
+
+#docentes .container > .mb-4 .card .card-body {
+  background-color: #f6e8c9;
+  color: #382b13;
+}
+
+#proyectos .card {
+  overflow: hidden;
+  border: 0;
+  background-color: var(--project-blue);
+  color: #ffffff;
+}
+
+#proyectos .card .card-body {
+  background-color: var(--project-blue);
+}
+
+#proyectos .card .card-title,
+#proyectos .card .card-text {
+  color: #ffffff;
 }
 
 /* Imágenes de dirección y consejería: algo más pequeñas para mostrar el rostro */
