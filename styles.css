@@ -30,46 +30,48 @@ body {
 }
 
 .site-header {
-  background-color: var(--header-blue);
+  background: linear-gradient(90deg, #d90429 0%, #ffd100 45%, #0a2540 100%);
   font-family: "Poppins", sans-serif;
 }
 
 .institution-strip {
   padding: 0.5rem 1rem;
-  background-color: var(--header-blue);
+  background-color: transparent;
   color: #ffffff;
   font-size: 0.8rem;
   font-weight: 800;
   letter-spacing: 0.16em;
-  text-align: center;
+  text-align: right;
   text-transform: uppercase;
 }
 
 .navbar {
-  background: linear-gradient(90deg, #ffeb3b 0%, var(--header-blue) 82%);
-  min-height: 100px;
+  background-color: transparent;
+  min-height: 150px;
+  padding-left: 20px !important;
+  padding-right: 20px !important;
 }
 
 .navbar-brand {
-  padding: 0.35rem 0.85rem 0.35rem 0.35rem;
-  border-radius: 0.5rem;
-  background-color: #ffeb3b;
-  color: #172033 !important;
+  margin-left: 0;
+  padding: 0;
+  background-color: transparent;
+  color: #ffffff !important;
 }
 
 .navbar-brand:hover,
 .navbar-brand:focus {
-  color: #172033 !important;
+  color: #ffffff !important;
 }
 
 .logo-placeholder {
   display: inline-grid;
-  width: 92px;
-  height: 92px;
+  width: 116px;
+  height: 137px;
   place-items: center;
-  overflow: hidden;
-  border-radius: 0.35rem;
-  background-color: #ffffff;
+  overflow: visible;
+  border-radius: 0;
+  background-color: transparent;
   color: #172033;
   font-size: 0.68rem;
   font-weight: 800;
@@ -77,6 +79,7 @@ body {
 }
 
 .logo-placeholder img {
+  display: block;
   width: 100%;
   height: 100%;
   object-fit: contain;
@@ -96,7 +99,7 @@ body {
 
 .specialty-bar {
   border-top: 1px solid rgba(255, 255, 255, 0.22);
-  background-color: #a94442;
+  background-color: transparent;
 }
 
 .specialty-links {
