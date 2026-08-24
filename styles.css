@@ -53,7 +53,7 @@ body {
 .navbar-brand {
   padding: 0.25rem 0.65rem 0.25rem 0.25rem;
   border-radius: 0.5rem;
-  background-color: var(--secondary);
+  background-color: #ffeb3b;
   color: #172033 !important;
 }
 
