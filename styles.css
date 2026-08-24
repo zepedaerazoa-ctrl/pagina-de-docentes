@@ -7,7 +7,7 @@
   --teal: #0f766e;
   --nav-pastel: #f8e7a8;
   --nav-strong: #8a6515;
-  --nav-red: #a94442;
+  --header-blue: #191970;
   --ochre-soft: #e6c879;
   --ochre-dark: #604714;
   --beige-page: #ead9b8;
@@ -30,13 +30,14 @@ body {
 }
 
 .site-header {
-  background-color: var(--nav-red);
+  background-color: var(--header-blue);
+  font-family: "Poppins", sans-serif;
 }
 
 .institution-strip {
   padding: 0.5rem 1rem;
-  background-color: #873536;
-  color: #fff8e6;
+  background-color: var(--header-blue);
+  color: #ffffff;
   font-size: 0.8rem;
   font-weight: 800;
   letter-spacing: 0.16em;
@@ -49,34 +50,46 @@ body {
   min-height: 76px;
 }
 
+.navbar-brand {
+  padding: 0.25rem 0.65rem 0.25rem 0.25rem;
+  border-radius: 0.5rem;
+  background-color: var(--secondary);
+  color: #172033 !important;
+}
+
+.navbar-brand:hover,
+.navbar-brand:focus {
+  color: #172033 !important;
+}
+
 .logo-placeholder {
   display: inline-grid;
   width: 68px;
   height: 68px;
   place-items: center;
-  border: 2px dashed var(--nav-strong);
+  border: 2px dashed #172033;
   border-radius: 50%;
-  color: #fff8e6;
+  color: #172033;
   font-size: 0.68rem;
   font-weight: 800;
   letter-spacing: 0.06em;
 }
 
 .nav-link {
-  color: #fff8e6 !important;
+  color: #ffffff !important;
   font-weight: 700;
   transition: color 0.25s ease, transform 0.25s ease;
 }
 
 .nav-link:hover,
 .nav-link.active {
-  color: #f8e7a8 !important;
+  color: #d9d9ff !important;
   transform: translateY(-1px);
 }
 
 .specialty-bar {
-  border-top: 1px solid rgba(255, 248, 230, 0.22);
-  background-color: #c36d5e;
+  border-top: 1px solid rgba(255, 255, 255, 0.22);
+  background-color: #a94442;
 }
 
 .specialty-links {
@@ -91,10 +104,10 @@ body {
 .specialty-links a {
   flex: 0 0 auto;
   padding: 0.48rem 0.8rem;
-  border: 1px solid rgba(96, 71, 20, 0.28);
+  border: 1px solid rgba(255, 255, 255, 0.7);
   border-radius: 999px;
-  background-color: #fff9df;
-  color: var(--ochre-dark);
+  background-color: #ffffff;
+  color: var(--header-blue);
   font-size: 0.78rem;
   font-weight: 700;
   text-decoration: none;
@@ -102,7 +115,7 @@ body {
 }
 
 .specialty-links a:hover {
-  background-color: var(--ochre-soft);
+  background-color: #d9d9ff;
   transform: translateY(-2px);
 }
 
