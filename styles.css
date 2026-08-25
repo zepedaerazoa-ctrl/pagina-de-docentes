@@ -834,3 +834,291 @@ footer p {
     line-height: 1.6;
   }
 }
+
+/* ===== SECCIÓN TALLER DE CARPINTERÍA Y EBANISTERÍA ===== */
+
+.carpinteria-section {
+  background: linear-gradient(180deg, #fdfbf7 0%, #f5f1eb 50%, #ede7df 100%);
+  padding: 5rem 1rem;
+  position: relative;
+}
+
+.carpinteria-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #8b6f47, transparent);
+}
+
+.carpinteria-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.carpinteria-titulo {
+  font-family: 'Playfair Display', serif;
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #4a2c11;
+  margin-bottom: 0.8rem;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+}
+
+.carpinteria-subtitulo {
+  font-family: 'Merriweather', serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #8b6f47;
+  font-style: italic;
+  margin: 0;
+  letter-spacing: 0.02em;
+}
+
+.carpinteria-contenido {
+  max-width: 900px;
+  margin: 0 auto 5rem;
+  background: #fefdfb;
+  padding: 3.5rem;
+  border: 2px solid #e6d5c3;
+  border-radius: 8px;
+  box-shadow: 
+    0 8px 32px rgba(74, 44, 17, 0.1),
+    inset 0 1px 1px rgba(255, 255, 255, 0.8),
+    0 0 0 1px rgba(139, 111, 71, 0.1);
+  position: relative;
+}
+
+.carpinteria-contenido::before {
+  content: '✦';
+  position: absolute;
+  top: -1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2rem;
+  color: #8b6f47;
+}
+
+.carpinteria-articulo {
+  margin-bottom: 3.5rem;
+  padding-bottom: 3.5rem;
+  border-bottom: 1px solid #e6d5c3;
+  position: relative;
+}
+
+.carpinteria-articulo:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.carpinteria-seccion-titulo {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #4a2c11;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.01em;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.carpinteria-seccion-titulo::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(180deg, #8b6f47, #c9a36d);
+  border-radius: 2px;
+}
+
+.carpinteria-contenido p {
+  font-family: 'Merriweather', serif;
+  font-size: 1.05rem;
+  line-height: 1.85;
+  color: #5a4a3a;
+  margin-bottom: 1.5rem;
+}
+
+.carpinteria-contenido strong {
+  color: #4a2c11;
+  font-weight: 700;
+}
+
+.carpinteria-lista {
+  list-style: none;
+  padding-left: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.carpinteria-lista li {
+  font-family: 'Merriweather', serif;
+  font-size: 1rem;
+  line-height: 1.9;
+  color: #5a4a3a;
+  padding-left: 2rem;
+  position: relative;
+  margin-bottom: 0.8rem;
+}
+
+.carpinteria-lista li::before {
+  content: '➢';
+  position: absolute;
+  left: 0.5rem;
+  color: #8b6f47;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+/* Galería de Imágenes */
+.carpinteria-galeria {
+  margin-top: 5rem;
+}
+
+.galeria-titulo {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: #4a2c11;
+  text-align: center;
+  margin-bottom: 3rem;
+  letter-spacing: -0.01em;
+}
+
+.galeria-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.galeria-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  background: #fefdfb;
+  border: 1px solid #e6d5c3;
+  box-shadow: 0 6px 20px rgba(74, 44, 17, 0.12);
+  transition: transform 0.4s cubic-bezier(0.23, 1, 0.320, 1), 
+              box-shadow 0.4s ease;
+}
+
+.galeria-item:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 12px 30px rgba(74, 44, 17, 0.25);
+}
+
+.galeria-item img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  display: block;
+  transition: filter 0.4s ease;
+  filter: brightness(0.95);
+}
+
+.galeria-item:hover img {
+  filter: brightness(1.05);
+}
+
+.galeria-caption {
+  font-family: 'Merriweather', serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #4a2c11;
+  text-align: center;
+  padding: 1.2rem 0.8rem;
+  margin: 0;
+  background: linear-gradient(180deg, transparent, rgba(139, 111, 71, 0.05));
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .carpinteria-titulo {
+    font-size: 2.8rem;
+  }
+
+  .carpinteria-subtitulo {
+    font-size: 1.2rem;
+  }
+
+  .carpinteria-contenido {
+    padding: 2.5rem;
+  }
+
+  .galeria-grid {
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .carpinteria-section {
+    padding: 3rem 1rem;
+  }
+
+  .carpinteria-titulo {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .carpinteria-subtitulo {
+    font-size: 1rem;
+  }
+
+  .carpinteria-contenido {
+    padding: 1.5rem;
+    margin-bottom: 3rem;
+  }
+
+  .carpinteria-contenido::before {
+    top: -1rem;
+    font-size: 1.5rem;
+  }
+
+  .carpinteria-articulo {
+    margin-bottom: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .carpinteria-seccion-titulo {
+    font-size: 1.5rem;
+    padding-left: 1.2rem;
+  }
+
+  .carpinteria-contenido p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+
+  .carpinteria-lista li {
+    font-size: 0.9rem;
+    line-height: 1.8;
+  }
+
+  .galeria-titulo {
+    font-size: 1.7rem;
+    margin-bottom: 2rem;
+  }
+
+  .galeria-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.2rem;
+  }
+
+  .galeria-item img {
+    height: 220px;
+  }
+
+  .galeria-caption {
+    font-size: 0.85rem;
+    padding: 0.8rem;
+  }
+}
