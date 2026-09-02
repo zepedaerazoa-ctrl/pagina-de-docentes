@@ -15,28 +15,28 @@ const TALLERES_DATA = {
                 numero: 1,
                 titulo: 'Origen del Taller',
                 contenido: 'La historia del Taller de Belleza y Cosmetología surge a partir de una circunstancia laboral que llevó a la docente responsable del área a asumir el desafío de impartir clases de belleza y cosmetología, a pesar de que inicialmente no contaba con conocimientos especializados en esta área.\n\nAntes de comenzar con el taller, la docente había trabajado durante aproximadamente un año y medio bajo la modalidad de crecimiento vegetativo. Debido a una situación relacionada con el pago de sus horas de trabajo, acudió a la instancia distrital correspondiente en busca de una solución. Durante este proceso, surgió la posibilidad de que se le asignaran horas para impartir clases de belleza y cosmetología.\n\nAl día siguiente de recibir la asignación, comenzó su proceso de capacitación mediante cursos impartidos por INFOP, relacionados con belleza y cosmetología. De esta manera comenzó a formarse el Taller de Belleza y Cosmetología. En sus primeros momentos, el taller prácticamente no contaba con herramientas ni equipo especializado.\n\nLa docente tuvo entonces que buscar diferentes alternativas para obtener los recursos necesarios. Entre las actividades que realizó se encontraba la venta de confites, empanadas, donas y panqueques. Con los fondos obtenidos mediante estas actividades comenzó poco a poco a adquirir los primeros equipos para el taller, incluyendo una plancha para el cabello de color rosado que aún conserva y que continúa funcionando.',
-                imagen: 'placeholder-1-origen.jpg',
+                imagen: 'fotos de maestros/imagenes taller cosmetologia/WhatsApp Image 2026-09-02 at 8.32.14 AM.jpeg',
                 layout: 'text-image' // texto a la izquierda, imagen a la derecha
             },
             {
                 numero: 2,
                 titulo: 'Los Primeros Años del Taller',
                 contenido: 'Durante sus primeros años, el Taller de Belleza y Cosmetología comenzó a desarrollarse con recursos muy limitados. Después de adquirir la primera plancha, se fueron incorporando poco a poco otros materiales necesarios para el aprendizaje de los estudiantes, entre ellos peines, ganchos y herramientas para el cabello.\n\nTambién se contó con una encolochadora, utilizada para realizar diferentes tipos de peinados y rizos. La adquisición de cada herramienta representaba un avance importante, ya que permitía ampliar las actividades prácticas realizadas dentro del taller.\n\nSu jornada laboral facilitaba la aplicación práctica. Mientras impartía sus clases durante la tarde (aproximadamente 2:00 p.m. a 7:00 p.m.), recibía formación en cosmetología durante la mañana. De esta manera, podía trasladar al taller parte de los conocimientos que iba adquiriendo en sus capacitaciones, incluyendo técnicas de planchado y secado del cabello, manicure, pedicure y tratamientos faciales.\n\nAdemás de los cursos recibidos en INFOP, la docente continuó buscando oportunidades de capacitación en diferentes lugares y realizó cursos de maquillaje a través de internet.',
-                imagen: 'placeholder-2-primeros-equipos.jpg',
+                imagen: 'fotos de maestros/imagenes taller cosmetologia/WhatsApp Image 2026-09-02 at 8.32.14 AM (1).jpeg',
                 layout: 'image-text' // imagen a la izquierda, texto a la derecha
             },
             {
                 numero: 3,
                 titulo: 'Crecimiento y Desarrollo del Taller',
                 contenido: 'Con el paso del tiempo, el Taller de Belleza y Cosmetología fue adquiriendo una mayor cantidad de herramientas y equipos. Lo que comenzó con una sola plancha para el cabello fue creciendo hasta contar con diferentes instrumentos destinados a las prácticas de los estudiantes.\n\nActualmente, el taller dispone de varias planchas, secadoras, herramientas para realizar rizos y diferentes materiales utilizados en los procesos de formación. También se incorporaron muñecas para realizar prácticas de peinado, aunque su utilización requiere control debido al deterioro del cabello durante las prácticas.\n\nEl espacio físico también ha experimentado cambios significativos. Inicialmente se contaba con recursos muy limitados y fue necesario ir acondicionando progresivamente el área de trabajo. Con el tiempo se incorporaron espejos, mesas y otros elementos que permitieron organizar mejor el taller. Algunas de las mesas pequeñas utilizadas para realizar prácticas de uñas fueron obtenidas de un colegio llamado Aldebarán.\n\nEl crecimiento del taller ha sido resultado de un proceso gradual, basado en el esfuerzo, las actividades de recaudación y la adquisición progresiva de herramientas y materiales necesarios para la formación de las estudiantes.',
-                imagen: 'placeholder-3-taller-actual.jpg',
+                imagen: 'fotos de maestros/imagenes taller cosmetologia/WhatsApp Image 2026-09-02 at 8.32.14 AM (2).jpeg',
                 layout: 'text-image'
             },
             {
                 numero: 4,
                 titulo: 'Ampliación de las Áreas de Formación',
                 contenido: 'A medida que el Taller de Belleza y Cosmetología fue desarrollándose, también fueron ampliándose las actividades y conocimientos ofrecidos a las estudiantes. Además de las prácticas relacionadas con el cabello, el taller incorporó áreas como manicure, pedicure, maquillaje y tratamientos faciales.\n\nLa capacitación constante de la docente permitió que estos conocimientos fueran integrándose progresivamente al proceso de enseñanza. Posteriormente también se incorporó el área de barbería para hombres, con la colaboración de Henry Moncada, originario de Zambrano, quien acudía al taller para realizar cortes de cabello y contribuir con la enseñanza de esta área.\n\nDe esta manera, el taller fue ampliando sus posibilidades de formación y ofreciendo a las estudiantes conocimientos que podían ser utilizados posteriormente tanto en el ámbito personal como laboral. El propósito no se ha limitado únicamente a enseñar técnicas de belleza, sino también a proporcionar conocimientos prácticos que puedan ser aprovechados por las estudiantes en diferentes situaciones y, eventualmente, convertirse en una fuente de ingresos.',
-                imagen: 'placeholder-4-estudiantes-practicas.jpg',
+                imagen: 'fotos de maestros/imagenes taller cosmetologia/WhatsApp Image 2026-09-02 at 8.39.02 AM.jpeg',
                 layout: 'image-text'
             },
             {
@@ -99,14 +99,14 @@ const TALLERES_DATA = {
                 numero: 7,
                 titulo: 'Actividades y Proyección del Taller',
                 contenido: 'Las propias estudiantes cumplen un papel importante en la promoción del Taller de Belleza y Cosmetología. Una de las principales formas de dar a conocer el trabajo realizado consiste en los servicios de peinado y otras actividades de belleza desarrolladas durante las prácticas.\n\nSe han incorporado nuevas actividades, como la colocación de pestañas, aunque su realización se encuentra condicionada por las disposiciones y supervisión de los consejeros. La venta de alimentos, confites y otros productos sigue siendo importante para recaudar fondos.\n\nEntre las herramientas utilizadas con mayor frecuencia se encuentran las planchas, secadoras, encolochadoras de rizos y diferentes accesorios para el cabello. Además, se han adquirido lámparas destinadas a la realización de uñas acrílicas, cuyo contenido se tiene previsto incorporar al curso posteriormente.\n\nLa necesidad de reponer constantemente productos de cosmetología hace que estas actividades sean una herramienta importante para mantener el taller funcionando y permitir la adquisición de nuevos recursos.',
-                imagen: 'placeholder-5-actividades.jpg',
+                imagen: 'fotos de maestros/imagenes taller cosmetologia/WhatsApp Image 2026-09-02 at 8.39.41 AM.jpeg',
                 layout: 'text-image'
             },
             {
                 numero: 8,
                 titulo: 'Visión y Futuro del Taller',
                 contenido: 'La principal meta expresada para el futuro del Taller de Belleza y Cosmetología es contar con un aula propia. Esta aspiración representa un paso importante dentro del proceso de crecimiento del taller, ya que permitiría disponer de un espacio destinado específicamente al desarrollo de las actividades de belleza y cosmetología.\n\nLa intención de continuar innovando también forma parte de la visión del taller. La incorporación progresiva de nuevas herramientas, productos y técnicas permite que las estudiantes tengan acceso a diferentes áreas de formación y puedan prepararse mejor para el futuro.\n\nPara la docente, formar parte de la historia del taller representa una nueva experiencia y, al mismo tiempo, una oportunidad de continuar trabajando en un área que se encuentra en constante evolución.\n\nEl propósito fundamental es que las estudiantes se preparen para el futuro mediante conocimientos prácticos que puedan utilizar posteriormente en diferentes ámbitos de su vida.',
-                imagen: 'placeholder-6-futuro.jpg',
+                imagen: 'fotos de maestros/imagenes taller cosmetologia/WhatsApp Image 2026-09-02 at 8.32.14 AM.jpeg',
                 layout: 'image-text'
             },
             {
