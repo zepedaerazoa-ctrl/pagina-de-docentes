@@ -329,57 +329,65 @@
 
       <section id="oferta" class="py-5 bg-light">
         <div class="container">
-          <div class="text-center mb-5">
+          <div class="text-center mb-4">
             <h2 class="section-title">Oferta Académica</h2>
-            <p class="text-muted">Nuestro plan académico incluye ciclo básico técnico y especializaciones profesionales de BTP que preparan a los estudiantes para el mundo laboral.</p>
           </div>
-          <div class="row g-4">
-            <div class="col-md-6 col-xl-4">
-              <div class="card h-100 shadow-sm card-hover">
-                <div class="card-body">
-                  <h5 class="card-title">7° Ciclo Básico Técnico</h5>
-                  <p class="card-text">Bases técnicas del área de ciencias y tecnología, con énfasis en computación, ciencias aplicadas y formación ciudadana.</p>
+
+          <div class="category-tabs" aria-label="Navegación de categorías">
+            <button class="category-tab is-active" type="button" data-tab="carreras">Carreras</button>
+            <button class="category-tab" type="button" data-tab="deportes">Deportes</button>
+            <button class="category-tab" type="button" data-tab="banda">Banda</button>
+            <button class="category-tab" type="button" data-tab="talleres">Talleres</button>
+          </div>
+
+          <div class="tab-panels">
+            <div class="tab-panel is-active" id="tab-carreras">
+              <div class="tab-dropdown-card">
+                <div class="career-grid">
+                  <article class="career-card">
+                    <h3>Bachillerato Técnico Profesional en Informática</h3>
+                    <p>Carrera práctica en programación, redes, soporte técnico y desarrollo de soluciones digitales adaptadas al entorno productivo.</p>
+                  </article>
+                  <article class="career-card">
+                    <h3>Bachillerato Técnico Profesional en Contaduría y Finanzas</h3>
+                    <p>Formación en contabilidad, finanzas, costos, normativa tributaria y gestión administrativa para empresas y emprendimientos.</p>
+                  </article>
+                  <article class="career-card">
+                    <h3>Bachillerato Técnico Profesional en Agroindustria</h3>
+                    <p>Especialización en el procesamiento de materias primas, control de calidad, transformación agropecuaria y desarrollo sostenible.</p>
+                  </article>
                 </div>
               </div>
             </div>
-            <div class="col-md-6 col-xl-4">
-              <div class="card h-100 shadow-sm card-hover">
-                <div class="card-body">
-                  <h5 class="card-title">8° Ciclo Básico Técnico</h5>
-                  <p class="card-text">Profundización en competencias técnicas, laboratorios prácticos y comienzo de orientación vocacional hacia ramas productivas.</p>
-                </div>
+
+            <div class="tab-panel" id="tab-deportes">
+              <div class="tab-dropdown-card">
+                <ul class="dropdown-list">
+                  <li><span class="dropdown-badge">Activo</span> Fútbol</li>
+                  <li><span class="dropdown-badge">Activo</span> Baloncesto</li>
+                  <li><span class="dropdown-badge">Próximamente</span> Voleibol</li>
+                </ul>
               </div>
             </div>
-            <div class="col-md-6 col-xl-4">
-              <div class="card h-100 shadow-sm card-hover">
-                <div class="card-body">
-                  <h5 class="card-title">9° Ciclo Básico Técnico</h5>
-                  <p class="card-text">Último ciclo del básico, enfocado en la integración de saberes y la preparación para la educación técnica superior.</p>
-                </div>
+
+            <div class="tab-panel" id="tab-banda">
+              <div class="tab-dropdown-card">
+                <ul class="dropdown-list">
+                  <li><span class="dropdown-badge">Grupo</span> Banda Latina Francisco Miranda</li>
+                  <li><span class="dropdown-badge">Ensayos</span> Prácticas de conjunto</li>
+                  <li><span class="dropdown-badge">Eventos</span> Presentaciones institucionales</li>
+                </ul>
               </div>
             </div>
-            <div class="col-md-6 col-xl-4">
-              <div class="card h-100 shadow-sm card-hover">
-                <div class="card-body">
-                  <h5 class="card-title">BTP Contaduría y Finanzas</h5>
-                  <p class="card-text">Formación en contabilidad, finanzas, costos, normativa tributaria y gestión administrativa para empresas y emprendimientos.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 col-xl-4">
-              <div class="card h-100 shadow-sm card-hover">
-                <div class="card-body">
-                  <h5 class="card-title">BTP Informática</h5>
-                  <p class="card-text">Carrera práctica en programación, redes, soporte técnico y desarrollo de soluciones digitales adaptadas al entorno productivo.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 col-xl-4">
-              <div class="card h-100 shadow-sm card-hover">
-                <div class="card-body">
-                  <h5 class="card-title">BTP Agroindustria</h5>
-                  <p class="card-text">Especialización en producción agrícola, procesamiento de alimentos y tecnologías para el desarrollo sostenible del sector primario.</p>
-                </div>
+
+            <div class="tab-panel" id="tab-talleres">
+              <div class="tab-dropdown-card">
+                <ul class="dropdown-list">
+                  <li><a href="talleres.html?taller=belleza">Belleza y Cosmetología</a></li>
+                  <li><a href="talleres.html?taller=carpinteria">Carpintería y Ebanistería</a></li>
+                  <li><span class="dropdown-badge">Próximamente</span> Electricidad</li>
+                  <li><span class="dropdown-badge">Próximamente</span> Hogar</li>
+                </ul>
               </div>
             </div>
           </div>
