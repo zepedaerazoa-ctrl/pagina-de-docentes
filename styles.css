@@ -115,60 +115,66 @@ body {
 .specialty-links {
   display: flex;
   gap: 0.8rem;
-  overflow-x: auto;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
   padding-top: 0.65rem;
   padding-bottom: 0.65rem;
-  scrollbar-width: thin;
-  align-items: center;
+  width: 100%;
+  max-width: 100%;
+  overflow: visible;
 }
 
 .specialty-links a {
-  flex: 1 1 0;
-  min-width: 8.5rem;
-  padding: 0.85rem 1rem;
+  flex: 0 1 auto;
+  min-width: 10rem;
+  padding: 1rem 1.35rem;
   border: 2px solid rgba(255, 255, 255, 0.9);
   border-radius: 999px;
   background-color: #ffffff;
   color: var(--header-blue);
   font-family: "Poppins", sans-serif;
-  font-size: 1.05rem;
+  font-size: 1.12rem;
   font-weight: 700;
   letter-spacing: 0.02em;
   text-align: center;
   text-decoration: none;
-  transition: transform 0.2s ease, background-color 0.2s ease;
+  transition: transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
   display: inline-block;
   position: relative;
+  box-shadow: 0 6px 14px rgba(17, 24, 39, 0.08);
 }
 
 .specialty-links a:hover {
   background-color: #d9d9ff;
   transform: translateY(-2px);
+  box-shadow: 0 12px 22px rgba(17, 24, 39, 0.12);
 }
 
 .specialty-links .dropdown {
   position: relative;
   display: inline-block;
-  flex: 1 1 0;
+  flex: 0 1 auto;
   min-width: 8.5rem;
 }
 
 .specialty-links .dropdown-toggle {
-  flex: 1 1 0;
-  min-width: 8.5rem;
-  padding: 0.85rem 1rem;
+  flex: 0 1 auto;
+  min-width: 10rem;
+  padding: 1rem 1.35rem;
   border: 2px solid rgba(255, 255, 255, 0.9);
   border-radius: 999px;
   background-color: #ffffff;
   color: var(--header-blue);
   font-family: "Poppins", sans-serif;
-  font-size: 1.05rem;
+  font-size: 1.12rem;
   font-weight: 700;
   letter-spacing: 0.02em;
   text-align: center;
   text-decoration: none;
   display: block;
-  transition: transform 0.2s ease, background-color 0.2s ease;
+  transition: transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 6px 14px rgba(17, 24, 39, 0.08);
 }
 
 .specialty-links .dropdown-toggle::after {
@@ -178,6 +184,7 @@ body {
 .specialty-links .dropdown-toggle:hover {
   background-color: #d9d9ff;
   transform: translateY(-2px);
+  box-shadow: 0 12px 22px rgba(17, 24, 39, 0.12);
 }
 
 .specialty-links .dropdown-menu {
@@ -554,17 +561,19 @@ footer p {
 .historia-badge {
   display: inline-block;
   position: absolute;
-  top: -15px;
+  top: -18px;
   right: 3rem;
-  padding: 0.6rem 1.5rem;
-  background-color: #3e2723;
-  color: #faf6f0;
+  padding: 0.9rem 1.8rem;
+  background: linear-gradient(135deg, #3e2723 0%, #7a4c31 100%);
+  color: #fffaf3;
   border-radius: 50px;
   font-family: 'Merriweather', serif;
-  font-size: 0.95rem;
-  font-weight: 600;
-  letter-spacing: 0.05em;
-  box-shadow: 0 4px 8px rgba(62, 39, 35, 0.25);
+  font-size: 1.6rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  box-shadow: 0 8px 18px rgba(62, 39, 35, 0.3);
+  border: 2px solid rgba(255,255,255,0.2);
+  text-shadow: 0 2px 8px rgba(0,0,0,0.2);
 }
 
 .historia-titulo {
