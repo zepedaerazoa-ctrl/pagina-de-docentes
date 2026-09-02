@@ -1,0 +1,621 @@
+/* ========================================
+   ESTILOS TALLER DE BELLEZA Y COSMETOLOGÍA
+   Diseño elegante con paleta morada pastel
+   ======================================== */
+
+/* ===== VARIABLES DE COLOR Y TIPOGRAFÍA ===== */
+:root {
+    /* Colores morados pastel y neutros */
+    --lilac: #E9D8A6;
+    --soft-lavender: #EAE6FA;
+    --pastel-violet: #D8B4FE;
+    --light-purple: #F3E8FF;
+    --darker-purple: #C084FC;
+    --soft-gray: #F5F3F0;
+    --warm-gray: #D7CCC8;
+    --rose-gold: #F5D5E3;
+    --accent-rose: #E9C9D8;
+    --text-dark: #4A3F35;
+    --text-light: #8B7C78;
+    --white-cream: #FFFBF7;
+
+    /* Tipografía */
+    --font-serif: 'Playfair Display', serif;
+    --font-sans: 'Poppins', sans-serif;
+}
+
+/* ===== RESET Y ESTILOS GLOBALES ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-sans);
+    background-color: var(--white-cream);
+    color: var(--text-dark);
+    line-height: 1.8;
+}
+
+/* ===== NAVEGACIÓN ===== */
+.navbar-wrapper {
+    background: linear-gradient(135deg, var(--soft-lavender) 0%, var(--light-purple) 100%);
+    box-shadow: 0 2px 8px rgba(216, 180, 254, 0.15);
+}
+
+.navbar-brand {
+    color: var(--darker-purple) !important;
+    font-size: 1.3rem;
+    font-family: var(--font-serif);
+    transition: all 0.3s ease;
+}
+
+.navbar-brand:hover {
+    transform: scale(1.05);
+    color: var(--pastel-violet) !important;
+}
+
+.navbar-brand i {
+    font-size: 1.5rem;
+}
+
+.nav-link {
+    color: var(--text-dark) !important;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    margin: 0 0.5rem;
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--darker-purple);
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+    width: 100%;
+}
+
+/* ===== SECCIÓN HERO ===== */
+.hero-taller {
+    position: relative;
+    min-height: 60vh;
+    background: linear-gradient(135deg, var(--pastel-violet) 0%, var(--light-purple) 50%, var(--soft-lavender) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 4rem 1rem;
+}
+
+.hero-overlay-belleza {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 20% 50%, rgba(232, 214, 250, 0.4) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(217, 180, 254, 0.3) 0%, transparent 50%);
+    animation: gradientShift 8s ease infinite;
+}
+
+@keyframes gradientShift {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+}
+
+.hero-content-belleza {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: var(--text-dark);
+}
+
+.hero-title {
+    font-family: var(--font-serif);
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    animation: fadeInDown 0.8s ease;
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    color: var(--darker-purple);
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    animation: fadeInUp 0.8s ease 0.2s backwards;
+}
+
+.hero-description {
+    font-size: 1.1rem;
+    color: var(--text-light);
+    max-width: 600px;
+    margin: 0 auto;
+    animation: fadeInUp 0.8s ease 0.4s backwards;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ===== SECCIONES PRINCIPALES ===== */
+.taller-container {
+    padding: 0;
+}
+
+.taller-section {
+    padding: 5rem 0;
+    transition: all 0.3s ease;
+}
+
+.section-light {
+    background: linear-gradient(180deg, var(--white-cream) 0%, var(--soft-gray) 100%);
+}
+
+.section-dark {
+    background: linear-gradient(180deg, var(--light-purple) 0%, var(--soft-lavender) 100%);
+}
+
+.section-title {
+    font-family: var(--font-serif);
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--darker-purple);
+    margin-bottom: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.section-title:hover {
+    color: var(--pastel-violet);
+    transform: translateX(5px);
+}
+
+.section-divider {
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(90deg, var(--pastel-violet), var(--darker-purple));
+    border-radius: 2px;
+    margin-bottom: 2rem;
+}
+
+.section-text {
+    font-size: 1.05rem;
+    color: var(--text-light);
+    margin-bottom: 1.5rem;
+    line-height: 1.9;
+}
+
+/* ===== PLACEHOLDERS DE IMAGEN ===== */
+.image-placeholder {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    aspect-ratio: 1 / 1;
+    background: linear-gradient(135deg, var(--soft-lavender), var(--light-purple));
+    box-shadow: 0 10px 40px rgba(216, 180, 254, 0.2);
+    transition: all 0.4s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 350px;
+}
+
+.image-placeholder:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 50px rgba(216, 180, 254, 0.3);
+}
+
+.placeholder-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.95;
+    transition: opacity 0.3s ease;
+}
+
+.image-placeholder:hover .placeholder-img {
+    opacity: 1;
+}
+
+.placeholder-text {
+    position: absolute;
+    text-align: center;
+    color: var(--text-dark);
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    background: rgba(255, 251, 247, 0.95);
+    padding: 1.5rem;
+    border-radius: 12px;
+}
+
+.image-placeholder:hover .placeholder-text {
+    opacity: 1;
+}
+
+.placeholder-text i {
+    font-size: 2.5rem;
+    color: var(--pastel-violet);
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.placeholder-text p {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+/* ===== TARJETAS DE LOGROS ===== */
+.achievement-card {
+    background: linear-gradient(135deg, rgba(255, 251, 247, 0.8), rgba(234, 230, 250, 0.6));
+    border: 2px solid var(--pastel-violet);
+    border-radius: 15px;
+    padding: 2rem;
+    text-align: center;
+    transition: all 0.4s ease;
+    box-shadow: 0 5px 20px rgba(216, 180, 254, 0.1);
+}
+
+.achievement-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(216, 180, 254, 0.25);
+    border-color: var(--darker-purple);
+    background: linear-gradient(135deg, rgba(255, 251, 247, 1), rgba(243, 232, 255, 0.8));
+}
+
+.achievement-icon {
+    font-size: 2.5rem;
+    color: var(--darker-purple);
+    margin-bottom: 1rem;
+    transition: all 0.3s ease;
+}
+
+.achievement-card:hover .achievement-icon {
+    color: var(--pastel-violet);
+    transform: scale(1.2) rotate(-5deg);
+}
+
+.achievement-card h3 {
+    font-family: var(--font-serif);
+    font-size: 1.3rem;
+    color: var(--darker-purple);
+    margin-bottom: 1rem;
+}
+
+.achievement-card p {
+    color: var(--text-light);
+    line-height: 1.7;
+}
+
+/* ===== TARJETAS DE RETOS ===== */
+.challenge-card {
+    background: rgba(255, 251, 247, 0.9);
+    border-left: 5px solid var(--pastel-violet);
+    border-radius: 10px;
+    padding: 2rem;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.challenge-card:hover {
+    transform: translateX(10px);
+    box-shadow: 0 10px 30px rgba(216, 180, 254, 0.2);
+    border-left-color: var(--darker-purple);
+}
+
+.challenge-number {
+    position: absolute;
+    top: -15px;
+    left: 20px;
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(135deg, var(--pastel-violet), var(--darker-purple));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.challenge-card h3 {
+    font-family: var(--font-serif);
+    color: var(--darker-purple);
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.challenge-card p {
+    color: var(--text-light);
+}
+
+/* ===== TARJETAS DE CUALIDADES ===== */
+.quality-card {
+    background: linear-gradient(135deg, var(--rose-gold) 0%, var(--accent-rose) 100%);
+    border-radius: 15px;
+    padding: 2rem;
+    text-align: center;
+    transition: all 0.4s ease;
+    box-shadow: 0 8px 25px rgba(245, 213, 227, 0.2);
+    border: 1px solid rgba(217, 180, 254, 0.3);
+}
+
+.quality-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 12px 35px rgba(216, 180, 254, 0.3);
+}
+
+.quality-icon {
+    font-size: 2.5rem;
+    color: var(--darker-purple);
+    margin-bottom: 1rem;
+    transition: all 0.3s ease;
+}
+
+.quality-card:hover .quality-icon {
+    color: var(--pastel-violet);
+    transform: scale(1.3);
+}
+
+.quality-card h3 {
+    font-family: var(--font-serif);
+    font-size: 1.2rem;
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+}
+
+.quality-card p {
+    color: var(--text-light);
+    line-height: 1.7;
+}
+
+/* ===== SECCIÓN DE LLAMADA A LA ACCIÓN ===== */
+.cta-section {
+    background: linear-gradient(135deg, var(--pastel-violet) 0%, var(--darker-purple) 100%);
+    color: white;
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+.cta-section h2 {
+    font-family: var(--font-serif);
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.cta-section p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    opacity: 0.95;
+}
+
+.btn-cta {
+    background: var(--white-cream);
+    color: var(--darker-purple);
+    padding: 0.8rem 2.5rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.btn-cta:hover {
+    background: var(--soft-gray);
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    color: var(--pastel-violet);
+}
+
+/* ===== FOOTER ===== */
+.footer-section {
+    background: linear-gradient(180deg, var(--text-dark) 0%, #2a2420 100%);
+    color: white;
+    padding: 3rem 1rem 1rem;
+}
+
+.footer-section h5 {
+    font-family: var(--font-serif);
+    color: var(--lilac);
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.footer-section p {
+    color: #ccc;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.footer-divider {
+    border-color: rgba(216, 180, 254, 0.2);
+    margin: 2rem 0 1rem;
+}
+
+.footer-bottom {
+    color: #999;
+    font-size: 0.9rem;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 1024px) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .taller-section {
+        padding: 3rem 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-taller {
+        min-height: 50vh;
+        padding: 3rem 1rem;
+    }
+
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.2rem;
+    }
+
+    .section-title {
+        font-size: 1.6rem;
+    }
+
+    .section-divider {
+        width: 60px;
+        margin-bottom: 1.5rem;
+    }
+
+    .image-placeholder {
+        min-height: 250px;
+        aspect-ratio: auto;
+    }
+
+    .nav-link {
+        margin: 0.25rem 0;
+    }
+
+    .cta-section h2 {
+        font-size: 1.8rem;
+    }
+
+    .achievement-card,
+    .quality-card {
+        padding: 1.5rem;
+    }
+
+    .challenge-card {
+        padding: 1.5rem;
+        margin-left: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-taller {
+        min-height: 40vh;
+    }
+
+    .hero-title {
+        font-size: 1.5rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+
+    .hero-description {
+        font-size: 0.95rem;
+    }
+
+    .section-title {
+        font-size: 1.4rem;
+    }
+
+    .section-text {
+        font-size: 0.95rem;
+    }
+
+    .image-placeholder {
+        min-height: 200px;
+    }
+
+    .taller-section {
+        padding: 2rem 0;
+    }
+
+    .navbar-brand {
+        font-size: 1rem;
+    }
+
+    .cta-section {
+        padding: 3rem 1.5rem;
+    }
+
+    .cta-section h2 {
+        font-size: 1.4rem;
+    }
+}
+
+/* ===== ANIMACIONES Y TRANSICIONES ===== */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.section-light .row > div {
+    animation: slideIn 0.6s ease;
+}
+
+/* Efecto de scroll suave para elementos */
+.taller-section {
+    opacity: 0;
+    animation: fadeInUp 0.8s ease forwards;
+}
+
+/* Mejora de accesibilidad */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation: none !important;
+        transition: none !important;
+    }
+}
+
+/* Focus visible para navegación por teclado */
+.nav-link:focus-visible,
+.btn-cta:focus-visible,
+.achievement-card:focus-visible,
+.quality-card:focus-visible {
+    outline: 2px solid var(--pastel-violet);
+    outline-offset: 2px;
+}
