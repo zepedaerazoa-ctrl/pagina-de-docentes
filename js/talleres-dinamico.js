@@ -167,21 +167,24 @@ class TallerDinamico {
     }
 
     renderizarSeccionNormal(seccion) {
-        const rutaImagen = seccion.imagen
-            ? (seccion.imagen.startsWith('http') || seccion.imagen.startsWith('data:') || seccion.imagen.startsWith('/') || seccion.imagen.startsWith('fotos de maestros/')
-                ? seccion.imagen
-                : `fotos de maestros/assets/images/${seccion.imagen}`)
-            : '';
+        const imagenes = seccion.imagenes || (seccion.imagen ? [seccion.imagen] : []);
+        const rutasImagenes = imagenes.map(imagen =>
+            imagen.startsWith('http') || imagen.startsWith('data:') || imagen.startsWith('/') || imagen.startsWith('fotos de maestros/') || imagen.startsWith('assets/')
+                ? imagen
+                : `fotos de maestros/assets/images/${imagen}`
+        );
 
-        const imagenHtml = seccion.imagen ? `
+        const imagenHtml = rutasImagenes.length ? `
             <div class="col-lg-6 ${seccion.layout === 'image-text' ? 'order-lg-1' : 'order-lg-2'}">
-                <div class="image-placeholder">
-                    <img src="${rutaImagen}" alt="${seccion.titulo}" class="placeholder-img" />
-                    <div class="placeholder-text">
-                        <i class="fas fa-images"></i>
-                        <p>${seccion.titulo}</p>
+                ${rutasImagenes.map(rutaImagen => `
+                    <div class="image-placeholder mb-3">
+                        <img src="${rutaImagen}" alt="${seccion.titulo}" class="placeholder-img" />
+                        <div class="placeholder-text">
+                            <i class="fas fa-images"></i>
+                            <p>${seccion.titulo}</p>
+                        </div>
                     </div>
-                </div>
+                `).join('')}
             </div>
         ` : '';
 

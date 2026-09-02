@@ -240,6 +240,7 @@ body {
 
 .hero-section .carousel,
 .hero-section .carousel-item {
+  height: 90vh;
   min-height: 90vh;
 }
 
