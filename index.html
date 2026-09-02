@@ -25,7 +25,7 @@
             <li class="nav-item"><a class="nav-link" href="#instituto">Instituto</a></li>
             <li class="nav-item"><a class="nav-link" href="#oferta">Oferta Académica</a></li>
             <li class="nav-item"><a class="nav-link" href="#docentes">Docentes</a></li>
-            <li class="nav-item"><a class="nav-link" href="taller-belleza.html">Taller de Belleza</a></li>
+            <li class="nav-item"><a class="nav-link" href="talleres.html">Talleres</a></li>
             <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
             <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
           </ul>
@@ -36,8 +36,29 @@
           <a href="#oferta">Carreras</a>
           <a href="#docentes">Deportes</a>
           <a href="#docentes">Banda</a>
-          <a href="taller-belleza.html">Belleza y Cosmetología</a>
-          <a href="#taller-carpinteria">Más Talleres</a>
+          <div class="dropdown">
+            <a href="talleres.html" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+              Más Talleres <i class="fas fa-chevron-down ms-1"></i>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="talleres.html?taller=belleza">
+                <i class="fas fa-spa me-2"></i>Belleza y Cosmetología
+              </a></li>
+              <li><a class="dropdown-item" href="talleres.html?taller=carpinteria">
+                <i class="fas fa-hammer me-2"></i>Carpintería y Ebanistería
+              </a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item disabled" href="#">
+                <i class="fas fa-bolt me-2"></i>Electricidad <span class="badge bg-warning text-dark ms-2">Próximamente</span>
+              </a></li>
+              <li><a class="dropdown-item disabled" href="#">
+                <i class="fas fa-home me-2"></i>Hogar <span class="badge bg-warning text-dark ms-2">Próximamente</span>
+              </a></li>
+              <li><a class="dropdown-item disabled" href="#">
+                <i class="fas fa-scissors me-2"></i>Costura y Confección <span class="badge bg-warning text-dark ms-2">Próximamente</span>
+              </a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </header>
