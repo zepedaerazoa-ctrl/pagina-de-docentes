@@ -7,6 +7,7 @@ class TallerDinamico {
     constructor() {
         this.tallerActual = 'belleza';
         this.contenedor = document.getElementById('taller-content');
+        this.selectorSection = document.querySelector('.talleres-selector');
         this.init();
     }
 
@@ -80,8 +81,21 @@ class TallerDinamico {
         const taller = TALLERES_DATA[tallerKey];
         if (!taller) return;
 
+        if (this.selectorSection) {
+            const mostrarSelector = tallerKey !== 'banda';
+            this.selectorSection.style.display = mostrarSelector ? 'block' : 'none';
+        }
+
         // Limpiar contenedor
         this.contenedor.innerHTML = '';
+        this.contenedor.classList.remove('theme-belleza', 'theme-carpinteria', 'theme-banda');
+        if (tallerKey === 'carpinteria') {
+            this.contenedor.classList.add('theme-carpinteria');
+        } else if (tallerKey === 'banda') {
+            this.contenedor.classList.add('theme-banda');
+        } else {
+            this.contenedor.classList.add('theme-belleza');
+        }
 
         // Crear HTML del taller
         const html = `
@@ -97,8 +111,16 @@ class TallerDinamico {
     }
 
     renderizarHero(taller) {
-        const temaClase = taller.id === 'carpinteria' ? 'hero-taller-carpinteria' : 'hero-taller-belleza';
-        const overlayClase = taller.id === 'carpinteria' ? 'hero-overlay-carpinteria' : 'hero-overlay-belleza';
+        let temaClase = 'hero-taller-belleza';
+        let overlayClase = 'hero-overlay-belleza';
+
+        if (taller.id === 'carpinteria') {
+            temaClase = 'hero-taller-carpinteria';
+            overlayClase = 'hero-overlay-carpinteria';
+        } else if (taller.id === 'banda') {
+            temaClase = 'hero-taller-banda';
+            overlayClase = 'hero-overlay-banda';
+        }
 
         return `
             <section class="hero-taller ${temaClase}">
@@ -145,10 +167,16 @@ class TallerDinamico {
     }
 
     renderizarSeccionNormal(seccion) {
+        const rutaImagen = seccion.imagen
+            ? (seccion.imagen.startsWith('http') || seccion.imagen.startsWith('data:') || seccion.imagen.startsWith('/') || seccion.imagen.startsWith('fotos de maestros/')
+                ? seccion.imagen
+                : `fotos de maestros/assets/images/${seccion.imagen}`)
+            : '';
+
         const imagenHtml = seccion.imagen ? `
             <div class="col-lg-6 ${seccion.layout === 'image-text' ? 'order-lg-1' : 'order-lg-2'}">
                 <div class="image-placeholder">
-                    <img src="fotos de maestros/assets/images/${seccion.imagen}" alt="${seccion.titulo}" class="placeholder-img" />
+                    <img src="${rutaImagen}" alt="${seccion.titulo}" class="placeholder-img" />
                     <div class="placeholder-text">
                         <i class="fas fa-images"></i>
                         <p>${seccion.titulo}</p>
@@ -244,11 +272,18 @@ class TallerDinamico {
     }
 
     renderizarCTA(taller) {
-        const tallerNombre = taller.id === 'belleza' ? 'Belleza y Cosmetología' : 'Carpintería y Ebanistería';
+        let tallerNombre = 'Carpintería y Ebanistería';
+
+        if (taller.id === 'belleza') {
+            tallerNombre = 'Belleza y Cosmetología';
+        } else if (taller.id === 'banda') {
+            tallerNombre = 'Banda Latina Francisco Miranda';
+        }
+
         return `
             <section class="cta-section">
                 <div class="container text-center">
-                    <h2>Únete al Taller de ${tallerNombre}</h2>
+                    <h2>Únete a la ${tallerNombre}</h2>
                     <p>Desarrolla habilidades prácticas que transformarán tu futuro</p>
                     <a href="index.html#contacto" class="btn btn-cta">Solicitar Información</a>
                 </div>

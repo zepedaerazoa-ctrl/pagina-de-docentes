@@ -47,6 +47,14 @@
     --theme-contrast: #FFF9F2;
 }
 
+.hero-taller-banda {
+    --theme-primary: #1d3557;
+    --theme-secondary: #d9caa4;
+    --theme-tertiary: #edf2ff;
+    --theme-accent: #c89b2a;
+    --theme-contrast: #fffaf0;
+}
+
 /* ===== RESET Y ESTILOS GLOBALES ===== */
 * {
     margin: 0;
@@ -145,6 +153,17 @@ body {
     animation: gradientShift 8s ease infinite;
 }
 
+.hero-overlay-banda {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 20% 50%, rgba(29, 53, 87, 0.35) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(200, 155, 42, 0.28) 0%, transparent 50%);
+    animation: gradientShift 8s ease infinite;
+}
+
 @keyframes gradientShift {
     0%, 100% { transform: scale(1); }
     50% { transform: scale(1.05); }
@@ -181,53 +200,134 @@ body {
     animation: fadeInUp 0.8s ease 0.4s backwards;
 }
 
-.hero-taller-carpinteria .section-title,
-.hero-taller-carpinteria .achievement-card h3,
-.hero-taller-carpinteria .challenge-card h3,
-.hero-taller-carpinteria .quality-card h3,
-.hero-taller-carpinteria .cta-section h2 {
-    color: var(--theme-accent);
+.theme-carpinteria .section-title,
+.theme-carpinteria .achievement-card h3,
+.theme-carpinteria .challenge-card h3,
+.theme-carpinteria .quality-card h3,
+.theme-carpinteria .cta-section h2,
+.theme-carpinteria .placeholder-text i {
+    color: #c75d00;
 }
 
-.hero-taller-carpinteria .section-divider {
-    background: linear-gradient(90deg, var(--theme-primary), var(--theme-accent));
+.theme-carpinteria .section-divider {
+    background: linear-gradient(90deg, #f8c79a, #d97706);
 }
 
-.hero-taller-carpinteria .achievement-card,
-.hero-taller-carpinteria .quality-card {
+.theme-carpinteria .achievement-card,
+.theme-carpinteria .challenge-card,
+.theme-carpinteria .quality-card {
     border-color: rgba(217, 119, 6, 0.35);
 }
 
-.hero-taller-carpinteria .achievement-card {
+.theme-carpinteria .achievement-card {
     background: linear-gradient(135deg, rgba(255, 251, 247, 0.8), rgba(253, 225, 190, 0.7));
 }
 
-.hero-taller-carpinteria .achievement-icon,
-.hero-taller-carpinteria .quality-icon,
-.hero-taller-carpinteria .challenge-number {
-    color: var(--theme-contrast);
-    background: linear-gradient(135deg, var(--theme-primary), var(--theme-accent));
+.theme-carpinteria .achievement-icon,
+.theme-carpinteria .quality-icon,
+.theme-carpinteria .challenge-number {
+    color: #fffaf5;
+    background: linear-gradient(135deg, #f8c79a, #d97706);
 }
 
-.hero-taller-carpinteria .challenge-card {
-    border-left-color: var(--theme-primary);
+.theme-carpinteria .challenge-card {
+    border-left-color: #f8c79a;
 }
 
-.hero-taller-carpinteria .quality-card {
-    background: linear-gradient(135deg, var(--theme-secondary) 0%, var(--theme-primary) 100%);
+.theme-carpinteria .quality-card {
+    background: linear-gradient(135deg, #fde1be 0%, #f8c79a 100%);
 }
 
-.hero-taller-carpinteria .cta-section {
-    background: linear-gradient(135deg, var(--theme-primary) 0%, var(--theme-accent) 100%);
+.theme-carpinteria .cta-section {
+    background: linear-gradient(135deg, #f8c79a 0%, #d97706 100%);
 }
 
-.hero-taller-carpinteria .btn-cta {
-    color: var(--theme-accent);
+.theme-carpinteria .btn-cta {
+    color: #b45309;
 }
 
-.hero-taller-carpinteria .btn-cta:hover {
-    color: var(--theme-primary);
-} 
+.theme-carpinteria .btn-cta:hover {
+    color: #f8c79a;
+}
+
+.theme-carpinteria .section-title:hover {
+    color: #e67a17;
+}
+
+.theme-carpinteria .achievement-card:hover {
+    border-color: #d97706;
+}
+
+.theme-carpinteria .challenge-card:hover {
+    border-left-color: #d97706;
+}
+
+.theme-carpinteria .quality-card:hover {
+    box-shadow: 0 12px 35px rgba(217, 119, 6, 0.25);
+}
+
+.theme-banda .section-title,
+.theme-banda .achievement-card h3,
+.theme-banda .challenge-card h3,
+.theme-banda .quality-card h3,
+.theme-banda .cta-section h2,
+.theme-banda .placeholder-text i {
+    color: #1d3557;
+}
+
+.theme-banda .section-divider {
+    background: linear-gradient(90deg, #d9caa4, #c89b2a);
+}
+
+.theme-banda .achievement-card,
+.theme-banda .challenge-card,
+.theme-banda .quality-card {
+    border-color: rgba(29, 53, 87, 0.2);
+}
+
+.theme-banda .achievement-card {
+    background: linear-gradient(135deg, rgba(255, 251, 247, 0.9), rgba(233, 240, 255, 0.8));
+}
+
+.theme-banda .achievement-icon,
+.theme-banda .quality-icon,
+.theme-banda .challenge-number {
+    color: #fffaf0;
+    background: linear-gradient(135deg, #1d3557, #c89b2a);
+}
+
+.theme-banda .challenge-card {
+    border-left-color: #d9caa4;
+}
+
+.theme-banda .quality-card {
+    background: linear-gradient(135deg, #edf2ff 0%, #d9caa4 100%);
+}
+
+.theme-banda .cta-section {
+    background: linear-gradient(135deg, #1d3557 0%, #c89b2a 100%);
+}
+
+.theme-banda .btn-cta {
+    color: #1d3557;
+}
+
+.theme-banda .btn-cta:hover {
+    color: #d9caa4;
+}
+
+.theme-banda .section-title:hover {
+    color: #2b4d7d;
+}
+
+.theme-banda .achievement-card:hover,
+.theme-banda .quality-card:hover {
+    box-shadow: 0 12px 35px rgba(29, 53, 87, 0.18);
+}
+
+.theme-banda .challenge-card:hover {
+    border-left-color: #c89b2a;
+}
 
 @keyframes fadeInDown {
     from {

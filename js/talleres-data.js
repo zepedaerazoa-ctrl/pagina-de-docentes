@@ -139,6 +139,78 @@ const TALLERES_DATA = {
             }
         ]
     },
+    banda: {
+        id: 'banda',
+        titulo: 'Banda Latina Francisco Miranda',
+        subtitulo: 'Tradición, disciplina y arte en cada presentación',
+        descripcion: 'Reseña histórica, cuadros musicales, presentaciones destacadas y el legado artístico de la banda institucional.',
+        icon: 'fas fa-music',
+        secciones: [
+            {
+                numero: 1,
+                titulo: 'Historia y Trayectoria',
+                contenido: 'La Banda Latina Francisco Miranda es una expresión cultural y artística de la institución, creada como un espacio para fortalecer el sentido de identidad, disciplina y trabajo en equipo entre estudiantes y docentes.\n\nA lo largo de los años, la banda ha evolucionado, consolidándose como una de las agrupaciones más representativas del instituto, con una historia marcada por la dedicación de sus directores, músicos, estudiantes y la comunidad educativa.\n\nSu trayectoria refleja la importancia de la música como herramienta de formación integral, promoviendo valores como la responsabilidad, la puntualidad, el respeto y la pasión por el arte.',
+                imagen: 'placeholder-banda-1.jpg',
+                layout: 'text-image'
+            },
+            {
+                numero: 2,
+                titulo: 'Integrantes y Cuadros de Presentación',
+                contenido: 'La banda institucional está integrada por diferentes secciones que aportan riqueza y equilibrio musical. Entre ellas se encuentran la percusión, los vientos, las liras, el cuerpo de palillonas, las pomponeras y la marcha.\n\nCada formación cumple una función específica dentro del conjunto, fortaleciendo la armonía y la disciplina que exige la interpretación musical en escenarios institucionales, desfiles, ceremonias y actividades culturales.',
+                tipo: 'quality-grid',
+                items: [
+                    {
+                        icon: 'fas fa-drum',
+                        titulo: 'Percusión',
+                        texto: 'Base rítmica y fuerza expresiva del conjunto musical.'
+                    },
+                    {
+                        icon: 'fas fa-wind',
+                        titulo: 'Vientos',
+                        texto: 'Melodías y matices que dan brillo a la interpretación.'
+                    },
+                    {
+                        icon: 'fas fa-guitar',
+                        titulo: 'Liras',
+                        texto: 'Armonías y acompañamientos con identidad cultural.'
+                    },
+                    {
+                        icon: 'fas fa-star',
+                        titulo: 'Palillonas y Pomponeras',
+                        texto: 'Componentes visuales y de energía que acompañan la presentación.'
+                    }
+                ]
+            },
+            {
+                numero: 3,
+                titulo: 'Logros y Presentaciones Destacadas',
+                contenido: 'La Banda Latina Francisco Miranda ha participado en diversas actividades institucionales y comunitarias, destacándose en desfiles patrios, celebraciones escolares, festivales culturales y presentaciones representativas del instituto.\n\nSus logros no solo se reflejan en la música, sino también en la constancia, el trabajo en equipo y el orgullo de representar a la comunidad educativa. Cada participación fortalece su legado y proyecta la imagen del instituto en el ámbito cultural.',
+                tipo: 'challenge-grid',
+                items: [
+                    {
+                        numero: '1',
+                        titulo: 'Desfiles Patrios',
+                        texto: 'Participaciones destacadas en actos cívicos y conmemoraciones nacionales.'
+                    },
+                    {
+                        numero: '2',
+                        titulo: 'Festivales Culturales',
+                        texto: 'Presentaciones en eventos institucionales y comunitarios.'
+                    },
+                    {
+                        numero: '3',
+                        titulo: 'Competencias y Reconocimientos',
+                        texto: 'Logros y menciones por su disciplina, calidad y ejecución musical.'
+                    },
+                    {
+                        numero: '4',
+                        titulo: 'Legado Institucional',
+                        texto: 'Un símbolo del arte, la identidad y el orgullo estudiantil.'
+                    }
+                ]
+            }
+        ]
+    },
     carpinteria: {
         id: 'carpinteria',
         titulo: 'Taller de Carpintería y Ebanistería',
@@ -157,7 +229,7 @@ const TALLERES_DATA = {
                 numero: 2,
                 titulo: 'Fundador e Impulsor',
                 contenido: 'El fundador fue el profesor Dino, un maestro jubilado de gran trayectoria y experiencia en el área de carpintería. Su dedicación y pasión por la enseñanza del oficio fueron fundamentales para establecer los cimientos del taller.\n\nPosteriormente, el equipo docente asumió el seguimiento como asistentes técnicos para impulsar el desarrollo del taller tanto en el área de madera como en estructuras y electricidad. Esta continuidad garantizó que la visión original del profesor Dino se mantuviera viva y evolucionara con las necesidades del mercado laboral.\n\nSu legado perdura en la formación de cientos de estudiantes que han adquirido habilidades prácticas en carpintería y que hoy son profesionales exitosos en el sector.',
-                imagen: 'placeholder-2-fundador.jpg',
+                imagen: 'fotos de maestros/Profe Dino Merino.jpeg',
                 layout: 'image-text'
             },
             {
