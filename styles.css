@@ -362,8 +362,10 @@ body {
 }
 
 .specialty-ochre { background-color: #f5e1a4; }
-.specialty-yellow { background-color: #fff1b8; }
-.specialty-peach { background-color: #f9d9b8; }
+.specialty-yellow { background-color: #f9d7b5; }
+.specialty-peach { background-color: #e9d8ff; }
+.specialty-purple { background-color: #e9d8ff; }
+.specialty-orange { background-color: #f9d7b5; }
 .specialty-cream { background-color: #f7e8c6; }
 .specialty-sage { background-color: #dce8c4; }
 .specialty-blue { background-color: #d7e6ef; }
@@ -906,7 +908,7 @@ footer p {
 /* ===== SECCIÓN TALLER DE CARPINTERÍA Y EBANISTERÍA ===== */
 
 .carpinteria-section {
-  background: linear-gradient(180deg, #fdfbf7 0%, #f5f1eb 50%, #ede7df 100%);
+  background: linear-gradient(180deg, #fff7f1 0%, #fbe2c9 52%, #f7d1a5 100%);
   padding: 5rem 1rem;
   position: relative;
 }
@@ -918,7 +920,7 @@ footer p {
   left: 0;
   right: 0;
   height: 1px;
-  background: linear-gradient(90deg, transparent, #8b6f47, transparent);
+  background: linear-gradient(90deg, transparent, #d97706, transparent);
 }
 
 .carpinteria-header {

@@ -97,9 +97,12 @@ class TallerDinamico {
     }
 
     renderizarHero(taller) {
+        const temaClase = taller.id === 'carpinteria' ? 'hero-taller-carpinteria' : 'hero-taller-belleza';
+        const overlayClase = taller.id === 'carpinteria' ? 'hero-overlay-carpinteria' : 'hero-overlay-belleza';
+
         return `
-            <section class="hero-taller">
-                <div class="hero-overlay-belleza"></div>
+            <section class="hero-taller ${temaClase}">
+                <div class="${overlayClase}"></div>
                 <div class="container hero-content-belleza">
                     <h1 class="hero-title">${taller.titulo}</h1>
                     <p class="hero-subtitle">${taller.subtitulo}</p>

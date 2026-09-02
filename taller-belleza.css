@@ -19,9 +19,32 @@
     --text-light: #8B7C78;
     --white-cream: #FFFBF7;
 
+    /* Tema por defecto: belleza */
+    --theme-primary: var(--pastel-violet);
+    --theme-secondary: var(--light-purple);
+    --theme-tertiary: var(--soft-lavender);
+    --theme-accent: var(--darker-purple);
+    --theme-contrast: var(--white-cream);
+
     /* Tipografía */
     --font-serif: 'Playfair Display', serif;
     --font-sans: 'Poppins', sans-serif;
+}
+
+.hero-taller-belleza {
+    --theme-primary: var(--pastel-violet);
+    --theme-secondary: var(--light-purple);
+    --theme-tertiary: var(--soft-lavender);
+    --theme-accent: var(--darker-purple);
+    --theme-contrast: var(--white-cream);
+}
+
+.hero-taller-carpinteria {
+    --theme-primary: #F8C79A;
+    --theme-secondary: #FDE1BE;
+    --theme-tertiary: #FFF1E2;
+    --theme-accent: #D97706;
+    --theme-contrast: #FFF9F2;
 }
 
 /* ===== RESET Y ESTILOS GLOBALES ===== */
@@ -92,7 +115,7 @@ body {
 .hero-taller {
     position: relative;
     min-height: 60vh;
-    background: linear-gradient(135deg, var(--pastel-violet) 0%, var(--light-purple) 50%, var(--soft-lavender) 100%);
+    background: linear-gradient(135deg, var(--theme-primary) 0%, var(--theme-secondary) 50%, var(--theme-tertiary) 100%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -108,6 +131,17 @@ body {
     bottom: 0;
     background: radial-gradient(circle at 20% 50%, rgba(232, 214, 250, 0.4) 0%, transparent 50%),
                 radial-gradient(circle at 80% 80%, rgba(217, 180, 254, 0.3) 0%, transparent 50%);
+    animation: gradientShift 8s ease infinite;
+}
+
+.hero-overlay-carpinteria {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 20% 50%, rgba(255, 180, 96, 0.35) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(248, 199, 154, 0.35) 0%, transparent 50%);
     animation: gradientShift 8s ease infinite;
 }
 
@@ -133,7 +167,7 @@ body {
 
 .hero-subtitle {
     font-size: 1.5rem;
-    color: var(--darker-purple);
+    color: var(--theme-accent);
     margin-bottom: 0.5rem;
     font-weight: 500;
     animation: fadeInUp 0.8s ease 0.2s backwards;
@@ -146,6 +180,54 @@ body {
     margin: 0 auto;
     animation: fadeInUp 0.8s ease 0.4s backwards;
 }
+
+.hero-taller-carpinteria .section-title,
+.hero-taller-carpinteria .achievement-card h3,
+.hero-taller-carpinteria .challenge-card h3,
+.hero-taller-carpinteria .quality-card h3,
+.hero-taller-carpinteria .cta-section h2 {
+    color: var(--theme-accent);
+}
+
+.hero-taller-carpinteria .section-divider {
+    background: linear-gradient(90deg, var(--theme-primary), var(--theme-accent));
+}
+
+.hero-taller-carpinteria .achievement-card,
+.hero-taller-carpinteria .quality-card {
+    border-color: rgba(217, 119, 6, 0.35);
+}
+
+.hero-taller-carpinteria .achievement-card {
+    background: linear-gradient(135deg, rgba(255, 251, 247, 0.8), rgba(253, 225, 190, 0.7));
+}
+
+.hero-taller-carpinteria .achievement-icon,
+.hero-taller-carpinteria .quality-icon,
+.hero-taller-carpinteria .challenge-number {
+    color: var(--theme-contrast);
+    background: linear-gradient(135deg, var(--theme-primary), var(--theme-accent));
+}
+
+.hero-taller-carpinteria .challenge-card {
+    border-left-color: var(--theme-primary);
+}
+
+.hero-taller-carpinteria .quality-card {
+    background: linear-gradient(135deg, var(--theme-secondary) 0%, var(--theme-primary) 100%);
+}
+
+.hero-taller-carpinteria .cta-section {
+    background: linear-gradient(135deg, var(--theme-primary) 0%, var(--theme-accent) 100%);
+}
+
+.hero-taller-carpinteria .btn-cta {
+    color: var(--theme-accent);
+}
+
+.hero-taller-carpinteria .btn-cta:hover {
+    color: var(--theme-primary);
+} 
 
 @keyframes fadeInDown {
     from {
